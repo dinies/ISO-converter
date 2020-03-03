@@ -1,9 +1,10 @@
 import sys
 
-arg1 = argv[1]
-arg2 = argv[2]
-arg3 = argv[3]
-arg4 = argv[4]
+arg1 = float(sys.argv[1])
+arg2 = float(sys.argv[2])
+arg3 = float(sys.argv[3])
+arg4 = float(sys.argv[4])
 
-
-return arg1 + arg2+ arg3 + arg4
+result = arg1 + arg2+ arg3 + arg4
+print(str(result))
+sys.stdout.flush()

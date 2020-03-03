@@ -7,7 +7,7 @@ app.listen(3000, function () {
     console.log('server running on port 3000');
 })
 
-app.get('/endpoint-name', convertIsoQuantities);
+app.get('/endpoint_name', convertIsoQuantities);
 
 function convertIsoQuantities(req, res) {
   var spawn = require("child_process").spawn;
