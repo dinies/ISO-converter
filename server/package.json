@@ -1,0 +1,17 @@
+{
+  "name": "iso-converter-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js converter-iso-server",
+    "start_w_debug": "node --inspect server.js converter-iso-server",
+    "stop": "killall -SIGINT node server.js converter-iso-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
