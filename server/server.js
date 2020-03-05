@@ -7,12 +7,12 @@ app.listen(3000, function () {
     console.log('server running on port 3000');
 })
 
-app.get('/endpoint_name', convertIsoQuantities);
+app.get('/convert', convertIsoQuantities);
 
 function convertIsoQuantities(req, res) {
   var spawn = require("child_process").spawn;
   var process = spawn('python', [
-    "./../src/convert.py",
+    "./../src/convertTrigger.py",
     req.query.arg1,
     req.query.arg2,
     req.query.arg3,
